@@ -1,17 +1,12 @@
 function prepcocktails(cocktails)
-    smiles = []
-    for cocktail in cocktails
-        for peak in cocktail.peaks
-            push!(smiles, peak.smiles)
-        end
-    end
-    embeddings = get_embeddings(smiles)
-
+    embeddings = get_embeddings(cocktails)
     # input: cocktails where peaks are BasicPeaks
     # output: cocktails where peaks are ScreeningPeaks, also contains UMAP coordinates
+    peak_count = 0
     for cocktail in cocktails
         for (i, peak) in enumerate(cocktail.peaks)
-            newpeak = ScreeningPeak(peak, embeddings[1, i], embeddings[2, i])
+            peak_count += 1
+            newpeak = ScreeningPeak(peak, embeddings[1, peak_count], embeddings[2, peak_count])
             cocktail.peaks[i] = newpeak
         end
         sort!(cocktail.peaks, by=sp -> sp.reference_shift, rev=true)
@@ -20,7 +15,13 @@ function prepcocktails(cocktails)
     return cocktails
 end
 
-function get_embeddings(smiles)
+function get_embeddings(cocktails)
+    smiles = []
+    for cocktail in cocktails
+        for peak in cocktail.peaks
+            push!(smiles, peak.smiles)
+        end
+    end
     fingerprint_matrix = []
     for i in smiles
         mol = get_mol(i)

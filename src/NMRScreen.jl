@@ -11,6 +11,7 @@ using MolecularGraph
 using NMRTools
 using Peaks
 using RDKitMinimalLib
+using Statistics
 using TOML
 using UMAP
 
