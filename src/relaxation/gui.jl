@@ -379,14 +379,14 @@ function showhelp()
     @info """
 # NMR Fragment Screening Analysis
 
-Shortcuts:
-- Left/Right arrow keys: Navigate between peaks
-- SHIFT + Left/Right: Navigate between peaks within the same fragment
-- Up/Down arrow keys: Navigate between cocktails
+Keyboard shortcuts:
+- ←/→: Navigate between peaks
+- SHIFT + ←/→: Navigate between peaks within the same fragment
+- ↑/↓: Navigate between cocktails
 - Mouse wheel: Adjust heatmap scale / spectrum zoom level
-- Click on heatmap: Select peak
-- Control-click: reset zoom
-- Right-drag: pan spectrum
+- Click points on heatmap / chemical space map: Select peak
+- Control-click: Reset zoom of spectrum / chemical space map
+- Right-drag: Pan spectrum / chemical space map
     """
 end
 

@@ -278,14 +278,14 @@ function showhelp()
     @info """
 # NMR Cocktail Peak Alignment
 
-Shortcuts:
-- Left/Right arrow keys: Navigate between peaks
-- SHIFT + Left/Right: Navigate between peaks within the same fragment
-- Up/Down arrow keys: Navigate between cocktails
-- '[' / ']': Nudge reference peak left/right (SHIFT for larger movement)
-- ',' / '.': Nudge bound peak left/right (SHIFT for larger movement)
-- Control-click: reset zoom
-- Right-drag: pan spectrum
+Keyboard shortcuts:
+- ←/→: Navigate between peaks
+- SHIFT + ←/→: Navigate between peaks within the same fragment
+- ↑/↓: Navigate between cocktails
+- '[' / ']': Nudge reference peak left/right (SHIFT for next maximum)
+- ',' / '.': Nudge bound peak left/right (SHIFT for next maximum)
+- Control-click: Reset zoom
+- Right-drag: Pan spectrum
     """
 end
 
