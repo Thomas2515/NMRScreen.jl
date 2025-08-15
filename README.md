@@ -5,7 +5,7 @@
 
 NMRScreen.jl is a Julia package for analysis of NMR fragment screening data, currently specialising in 19F R₂ relaxation measurements.
 
-![Screenshot of NMRScreen.jl analysis window with heatmap](./assets/analysis-heatmap-screenshot.png)
+![Screenshot of NMRScreen.jl analysis window with heatmap](./docs/src/assets/analysis-heatmap-screenshot.png)
 
 ## Development Status
 NMRScreen.jl is in early development and actively evolving. While the core functionality is stable, you may encounter changes in the API, data formats, and features as we continue to improve the package. We're currently focused on R₂-based screening but plan to expand to other NMR screening approaches in future releases.
@@ -191,8 +191,8 @@ Keyboard shortcuts:
 
 The second stage quantifies binding through ΔR₂ analysis:
 
-![Screenshot of NMRScreen.jl analysis window with heatmap](./assets/analysis-heatmap-screenshot.png)
-![Screenshot of NMRScreen.jl analysis window with chemical space map](./assets/analysis-umap-screenshot.png)
+![Screenshot of NMRScreen.jl analysis window with heatmap](./docs/src/assets/analysis-heatmap-screenshot.png)
+![Screenshot of NMRScreen.jl analysis window with chemical space map](./docs/src/assets/analysis-umap-screenshot.png)
 
 Keyboard shortcuts:
 - ←/→: Navigate between peaks
