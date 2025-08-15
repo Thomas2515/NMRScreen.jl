@@ -18,7 +18,7 @@ using UMAP
 export screen
 export smilestoimage
 
-# Include other source files
+# Include all other source files
 include("types.jl")
 using .Types
 
